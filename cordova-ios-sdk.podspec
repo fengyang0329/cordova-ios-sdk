@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "cordova-ios-sdk"
   spec.module_name = "Cordova"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "cordova-ios-sdk"
 
   # This description is used to generate tags and improve search results.
@@ -81,7 +81,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://github.com/fengyang0329/cordova-ios-sdk.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/fengyang0329/cordova-ios-sdk.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-  
+
  spec.source_files  = "Classes", "Classes/{Public,Private}/**/*.{h,m,c}"
   # spec.exclude_files = "Classes/Exclude"
 
