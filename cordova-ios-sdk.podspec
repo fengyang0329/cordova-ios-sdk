@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "cordova-ios-sdk"
   spec.module_name = "Cordova"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "cordova-ios-sdk"
 
   # This description is used to generate tags and improve search results.
@@ -123,7 +123,7 @@ Pod::Spec.new do |spec|
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
-  # spec.library   = "iconv"
+  spec.library   = "libxml2.tbd"
   # spec.libraries = "iconv", "xml2"
 
 
@@ -135,7 +135,7 @@ Pod::Spec.new do |spec|
 
   spec.requires_arc = true
 
-  spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" "OTHER_LDFLAGS" => "-ObjC"}
   # spec.dependency "JSONKit", "~> 1.4"
 
 end
