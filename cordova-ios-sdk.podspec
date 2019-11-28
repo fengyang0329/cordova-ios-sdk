@@ -123,7 +123,7 @@ Pod::Spec.new do |spec|
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
-  spec.library   = "libxml2.tbd"
+  spec.library   = "xml2"
   # spec.libraries = "iconv", "xml2"
 
 
@@ -135,7 +135,10 @@ Pod::Spec.new do |spec|
 
   spec.requires_arc = true
 
-  spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" "OTHER_LDFLAGS" => "-ObjC"}
+  spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2","OTHER_LDFLAGS" => "-ObjC"}
+  # spec.xcconfig = {"OTHER_LDFLAGS" => "-ObjC"}
+
+
   # spec.dependency "JSONKit", "~> 1.4"
 
 end
